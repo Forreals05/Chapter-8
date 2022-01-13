@@ -48,4 +48,15 @@ public class Circle //this is a class header
     //constructors have the same name as the class
     //constructors have no return types
     
+    //this is a GETTER or accessor method
+    public double getRadius()
+    {
+        return radius;
+    }
+    
+    //thus us a SETTER or modifier or mutator method
+    public void setRadius(double r)
+    {
+        radius = r;
+    }
 }
