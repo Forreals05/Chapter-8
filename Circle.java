@@ -1,4 +1,4 @@
-// Alphonsoi Martin
+// Alphonso Martin
 //Programing II
 
 public class Circle //this is a class header
@@ -38,7 +38,7 @@ public class Circle //this is a class header
     }
     
     //this constructor takes an argument and stores it
-    public Circle(double r)
+    public Circle(double r) //OVERLOADED constructor
     {
         radius = r;
     }
@@ -49,14 +49,38 @@ public class Circle //this is a class header
     //constructors have no return types
     
     //this is a GETTER or accessor method
+    // they return informartion to other classes
     public double getRadius()
     {
         return radius;
     }
     
     //thus us a SETTER or modifier or mutator method
+    //they chnage the state of the object
     public void setRadius(double r)
     {
         radius = r;
     }
+    
+    public double getCircumference()
+    {
+        return (2 * PI * radius);
+    }
+    
+    public double getArea()
+    {
+        return (PI * radius * radius);
+    }
+    // the four methods above this are INSTANCE METHODS
+    // they are unique to each instance of a class and refer to each ones specific state
+    
+    
+    public static void displayAreaFormula()  //Static methods are CLASS METHODS 
+    //they are the same for every object of a given class 
+    //they cannot refer to any instance variables or methods in the class
+    {
+        System.out.println("Area = pi * r^2");
+    }
+    
+    
 }
