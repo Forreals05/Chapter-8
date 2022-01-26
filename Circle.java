@@ -72,6 +72,7 @@ public class Circle //this is a class header
         return (PI * radius * radius);
     }
     // the four methods above this are INSTANCE METHODS
+    //they depend on the STATE of a given INSTANCE of an OBJECT
     // they are unique to each instance of a class and refer to each ones specific state
     
     
@@ -82,5 +83,31 @@ public class Circle //this is a class header
         System.out.println("Area = pi * r^2");
     }
     
+    public String displayCircumferenceFormula()
+    {
+        return "Circumference = 2 * PI * radius";
+    }
     
+    //These are examples of CLASS METHODS they do not depend on the STATE of a given INSTANCE of an OBJECT
+    
+    //Every OBJECT has a toString() that prints off the memory address
+    //this happens through INHERITANCE
+    // we can OVERRIDE preexisting methods to serve a more specific purpose
+    // they must have the exact same method header to be overriden
+    public String toString()
+    {
+        return "H. My radius is " + radius + " deal with it";
+    }
+    
+    
+    public boolean equals(Object obj) //Object is the data type
+    {
+        // first thing is change Object into specific data type
+        Circle other = (Circle) obj;
+        
+        if ( getRadius() == other.getRadius())
+            return true;
+        return false;
+        
+    }
 }
