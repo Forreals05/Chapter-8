@@ -41,12 +41,21 @@ public class CircleTester
         Circle.displayAreaFormula(); // because this is a static method it can be called from
         // the class itself instead of from a specific insatnce of the class
         
-        /* token.setRadius(2);
+        System.out.println();
+        System.out.println(pie);
+        token.setRadius(2);
         double x = 7.9;
         token.setRadius(x);
         token.setRadius(Math.random());
-        */
        
+       System.out.println(token.toString());
+       
+       
+       pie.setRadius(42);
+       pizza.setRadius(42);
+       
+       System.out.println(pizza == pie);
+       System.out.println(pizza.equals(pie));
        
     }
 }
