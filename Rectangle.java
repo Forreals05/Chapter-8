@@ -53,4 +53,15 @@ public class Rectangle
     {
         System.out.println("Area = length * width");
     }
+    
+    public boolean equals(Object obj) //Object is the data type
+    {
+        // first thing is change Object into specific data type
+        Rectangle other = (Rectangle) obj;
+        
+        if ( getArea() == other.getArea())
+            return true;
+        return false;
+        
+    }
 }
