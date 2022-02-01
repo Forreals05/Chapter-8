@@ -7,7 +7,7 @@ public class RectangleTester
     {
         Rectangle box = new Rectangle();
         
-        box.setLength(5);
+        box.setLength(6);
         System.out.println("Box L= " + box.getLength());
         
         box.setWidth(3);
@@ -18,5 +18,14 @@ public class RectangleTester
         
         Rectangle.displayPerimeterFormula();
         Rectangle.displayAreaFormula();
+        
+        Rectangle table = new Rectangle();
+        
+        table.setWidth(2);
+        table.setLength(9);
+        
+        System.out.println(box.equals(table));
+        
+    
     }
 }
