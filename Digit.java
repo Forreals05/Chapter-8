@@ -17,24 +17,25 @@ public class DigitExtractor
     public void Whole()
     {
         System.out.println("The whole number is: "+ num );
+        System.out.println();
     }
     
-    public int ones(int ones)
+    public int ones()
     {
-        ones = num % 100;
+        int ones = num % 10;
         return ones;
     }
     
-    public int tens(int tens)
+    public int tens()
     {
-        tens = num % 100;
+        int tens = num % 100;
         tens = tens / 10;
         return tens;
     }
     
-    public int hundo(int hundo)
+    public int hundo()
     {
-        hundo = num / 100;
+        int hundo = num / 100;
         return hundo;
     }
     
